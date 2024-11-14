@@ -19,9 +19,10 @@
             align-items: center;
             min-height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background-color: white;
             /* Black background */
             color: gold;
+            max-height: 100vh;
             /* Gold text color */
         }
 
@@ -32,11 +33,11 @@
 
         h1 {
             margin-bottom: 20px;
-            color: white;
+            color: black;
         }
 
         h2 {
-            color: rgb(156, 185, 211);
+            color: rgb(127, 172, 211);
         }
 
         .button-group {
@@ -53,10 +54,10 @@
 
             margin: 10px;
             font-size: 18px;
-            color: gold;
-            background-color: rgba(0, 0, 0, 0.6);
+            color: black;
+            background-color: rgb(247, 246, 246);
             /* Black glassy effect */
-            border: 2px solid rgb(229, 255, 0);
+            border: 2px solid rgb(0, 0, 0);
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
@@ -65,13 +66,13 @@
         }
 
         .button-group button:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(150, 147, 147, 0.8);
             transform: scale(1.05);
         }
 
         .button-group button:nth-child(2) {
             padding: 0px;
-            border: 1px dotted white;
+            border: 1px dotted rgb(0, 0, 0);
         }
     </style>
 </head>
@@ -82,7 +83,7 @@
         <h2>Student Performance Analysis</h2>
 
         <div class="button-group">
-            <button onclick="dashboard()">Student Dashboard</button>
+            <button onclick="location.href='inputsForDashboard.html'">Student Dashboard</button>
             <button></button>
             <button onclick="location.href='semSelection.html'">Evaluate SGPA</button>
             <button onclick="location.href='addToDb.html'">Add SGPA's To Database</button>
